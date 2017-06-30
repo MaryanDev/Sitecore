@@ -1,0 +1,66 @@
+----item----
+version: 1
+id: {D3F27BA5-7FD9-4402-9CEA-449799598238}
+database: master
+path: /sitecore/templates/Trainings/Pages/Articles/__Standard Values
+parent: {5CFCBC7F-72F2-4D90-8640-B36D9FE79E5A}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {5CFCBC7F-72F2-4D90-8640-B36D9FE79E5A}
+templatekey: Articles
+created: 20170608T101233:636325135531200000
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 468
+
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{517115D1-9712-4D55-80B2-10E181E70FEC}"><r id="{31EF160E-EFEC-4C73-B1FC-72893576650E}" ph="Navbar" uid="{662F3399-2A45-425A-95A8-6B8748CC41BA}" /><r id="{124A8FE3-53F7-4836-BC15-6B442DB88536}" ph="Footer" uid="{F8753AE0-1D83-4497-A219-E2BCF5BF7267}" /><r id="{54BCC6D1-DF3E-47CD-9833-1A5D3A9C723F}" ph="Page.Grid" uid="{841FBAED-87A3-479D-91CB-2F824939CF9B}" /></d></r>
+----version----
+language: en
+version: 1
+revision: 30194412-3aa0-45fc-aa18-2e9303c910da
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170608T101233Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+30194412-3aa0-45fc-aa18-2e9303c910da
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170616T115411Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

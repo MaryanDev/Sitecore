@@ -1,0 +1,12 @@
+﻿@model SiteCoreTrainings.Data.Models.PaginationDetails
+@if (Model.AllPages > 1)
+{
+    <div>
+        <ul class="pagination pagination-sm">
+            @for (int page = 1; page <= Model.AllPages; page++)
+            {
+                <li><a href="@Model.Url?page=@page">@page</a></li>
+            }
+        </ul>
+    </div>
+}

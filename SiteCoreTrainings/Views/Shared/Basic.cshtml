@@ -1,0 +1,29 @@
+﻿@using Sitecore.Mvc
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+<html>
+<head>
+    <link rel="stylesheet" href="~/Content/bootstrap.css" />
+    <link href="~/Content/site.css" rel="stylesheet" />
+    <link href="~/Content/slick.css" rel="stylesheet" />
+    <link href="~/Content/slick-theme.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.2.1.js"></script>
+    <script type="text/javascript"
+            src="https://cdn.rawgit.com/meetselva/attrchange/master/js/attrchange.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/main.js"></script>
+</head>
+<body>
+    @Html.Sitecore().Placeholder("Navbar")
+    <div style="margin-top: 5%">
+        @Html.Sitecore().Placeholder("Page.Grid")
+    </div>
+    <footer class="text-center">
+        @Html.Sitecore().Placeholder("Footer")
+    </footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgH868XE87f5naVfKznFT2zFxB1mrWZyc&callback=initMap"></script>
+    <script src="~/Scripts/slick.js"></script>
+    <script src="~/Scripts/sliderOptions.js"></script>
+</body>
+</html>

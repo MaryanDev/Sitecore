@@ -1,0 +1,59 @@
+----item----
+version: 1
+id: {614341A6-F66E-4EE1-80CE-735C5FFA160D}
+database: master
+path: /sitecore/content/trainings-site
+parent: {0DE95AE4-41AB-4D01-9EB0-67441B7C2450}
+name: trainings-site
+master: {00000000-0000-0000-0000-000000000000}
+template: {EDDCA74F-D819-48D1-928E-B2441C41E367}
+templatekey: Site Folder
+created: 20170607T143443:636324428838970000
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 145
+
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{517115D1-9712-4D55-80B2-10E181E70FEC}" /></r>
+----version----
+language: en
+version: 1
+revision: 437a8159-0b38-4011-9a86-de4074af1d81
+
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 13
+
+Trainings.com
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170607T143443Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+437a8159-0b38-4011-9a86-de4074af1d81
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170607T170754Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

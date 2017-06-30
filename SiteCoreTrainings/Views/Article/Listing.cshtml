@@ -1,0 +1,34 @@
+﻿@using Glass.Mapper.Sc.Web.Mvc
+@using Sitecore.Mvc
+@model SiteCoreTrainings.Data.Models.IArticlesPage
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 col-md-push-3 text-center">
+            <h3>@Html.Glass().Editable(x => x.Title)</h3>
+            <table class="table table-responsive table-hover data-table">
+                <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Date Created</th>
+                    <th>Author</th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var article in Model.ArticlesList)
+                {
+                    
+                    <tr>
+                        <td><a href="@article.Url">@article.PageTitle</a></td>
+                        <td>@article.Date</td>
+                        <td><a href="@article.Author.Url">@article.Author.FullName</a></td>
+                        <td><span id="@article.Id" class="glyphicon glyphicon-thumbs-up like-sign" >@article.Likes</span></td>
+                        @*<input type="hidden" class="" value="@article.Id" />*@
+                    </tr>
+                }
+                </tbody>
+            </table>
+            @Html.Partial("Pagination/Pagination", Model.Pagination)
+        </div>
+    </div>
+</div>

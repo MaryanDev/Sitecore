@@ -1,0 +1,59 @@
+----item----
+version: 1
+id: {FD062F20-1195-4A67-8C5C-6D6BF31F2172}
+database: master
+path: /sitecore/content/trainings-site/home/Authors
+parent: {7D1041A7-5A98-4F00-8737-145D1CC79DBB}
+name: Authors
+master: {00000000-0000-0000-0000-000000000000}
+template: {5E3E3E4E-1B2E-4D1B-AEFB-2A513AAA310B}
+templatekey: Authors
+created: 20170608T155343:636325340231970000
+
+----version----
+language: en
+version: 1
+revision: 9097216c-dcd2-4346-884d-2162dfb6c494
+
+----field----
+field: {09CFECBB-D50E-4E58-B7AC-E78FCA62E63D}
+name: Title
+key: title
+content-length: 7
+
+Authors
+----field----
+field: {FF219E5F-79AB-43EB-B375-2DAA2888BFA0}
+name: Authors
+key: authors
+content-length: 77
+
+{0587CB97-265F-4962-B4BC-AB742762A785}|{40679603-D41F-4D73-A8D6-2A6DB20851ED}
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170608T155343Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+9097216c-dcd2-4346-884d-2162dfb6c494
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170616T115223Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

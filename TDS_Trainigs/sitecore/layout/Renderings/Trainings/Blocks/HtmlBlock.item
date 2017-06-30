@@ -1,0 +1,52 @@
+----item----
+version: 1
+id: {7C817470-C1F0-4024-9118-63F1F2B3DAFF}
+database: master
+path: /sitecore/layout/Renderings/Trainings/Blocks/HtmlBlock
+parent: {B7C9D8DE-0BF8-4A53-823D-BD6F64B97280}
+name: HtmlBlock
+master: {00000000-0000-0000-0000-000000000000}
+template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
+templatekey: View rendering
+created: 20170608T075742:636325054626870000
+
+----field----
+field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
+name: Path
+key: path
+content-length: 37
+
+/Views/Shared/Blocks/HtmlBlock.cshtml
+----version----
+language: en
+version: 1
+revision: 3cfc6525-039f-47c8-a17b-f3b85fb87b50
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170608T075742Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3cfc6525-039f-47c8-a17b-f3b85fb87b50
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170608T080445Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

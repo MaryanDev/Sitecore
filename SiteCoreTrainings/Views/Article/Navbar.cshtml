@@ -1,0 +1,35 @@
+﻿@model SiteCoreTrainings.Data.Models.IMenuItem
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="@Model.Url">@Model.Title</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                @foreach (var item in Model.Children)
+                {
+                    <li><a href="@item.Url">@item.Title</a></li>
+                }
+            </ul>
+            <div class="navbar-right">
+
+                @if (Sitecore.Context.User.IsAuthenticated)
+                {
+                    <p class="navbar-brand">
+                        Hello @Sitecore.Context.User.Name /
+                        @foreach (var role in Sitecore.Context.User.Roles)
+                        {
+                            @:(role.Name + ",")
+                        }
+                    </p>
+                    <a class="navbar-brand" href="@Url.Action("Logout", "Account")">Log out</a>
+                }
+                else
+                {
+                    <a class="navbar-brand" href="@ViewBag.loginPageNavbarItem.Url">@ViewBag.loginPageNavbarItem.Title</a>
+                    <a class="navbar-brand" href="@ViewBag.registerPageNavbarItem.Url">@ViewBag.registerPageNavbarItem.Title</a>
+                }
+            </div>
+        </div>
+    </div>
+</div>

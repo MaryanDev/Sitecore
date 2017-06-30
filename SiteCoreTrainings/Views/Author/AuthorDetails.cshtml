@@ -1,0 +1,30 @@
+﻿@using Glass.Mapper.Sc.Web.Mvc
+@using Sitecore.Mvc
+@model SiteCoreTrainings.Data.Models.IAuthorDetails
+
+<div class="container">
+    <div class="row data-panel">
+        <div class="col-md-4">
+            <h1>@Html.Glass().Editable(m => m.FullName)</h1>
+            <div>@Html.Glass().RenderImage(m => m.ProfileImage, new { @class = "img img-circle img-responsive" })</div>
+        </div>
+        <div class="col-md-8">
+            <p class="text-left">
+                <span>Date of birth - @Html.Glass().Editable(m => m.DateOfBirth)</span>
+                <hr />
+                @Html.Glass().Editable(m => m.Bio)
+            </p>
+            <div>
+                <h3>Articles by this author</h3>
+                <ul style="list-style:disc">
+                    @foreach (var article in Model.Articles)
+                    {
+                        <li><a href="@article.Url">@article.PageTitle</a></li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+    @Html.Sitecore().Placeholder("AuthorCommentsForm")
+    @Html.Partial("Comments/CommentsList", Model.Comments)
+</div>

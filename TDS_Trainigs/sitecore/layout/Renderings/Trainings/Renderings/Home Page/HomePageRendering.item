@@ -1,0 +1,66 @@
+----item----
+version: 1
+id: {DABAC4AA-8270-49E8-85BE-52B37064C692}
+database: master
+path: /sitecore/layout/Renderings/Trainings/Renderings/Home Page/HomePageRendering
+parent: {02132143-E00E-45DA-85F7-A13DEDF443B9}
+name: HomePageRendering
+master: {00000000-0000-0000-0000-000000000000}
+template: {2A3E91A0-7987-44B5-AB34-35C2D9DE83B9}
+templatekey: Controller rendering
+created: 20170608T135605:636325269655830000
+
+----field----
+field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
+name: Controller
+key: controller
+content-length: 8
+
+HomePage
+----field----
+field: {DED9E431-3604-4921-A4B3-A6EC7636A5B6}
+name: Controller Action
+key: controller action
+content-length: 8
+
+HomePage
+----field----
+field: {13F89250-AD6B-4548-882E-118A12C18094}
+name: Parameters Template
+key: parameters template
+content-length: 38
+
+{6A3FD3DA-C914-43F0-BE3D-B0A74A5D591F}
+----version----
+language: en
+version: 1
+revision: ba831a03-45f0-438b-8158-fd97d65508d9
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170608T135605Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ba831a03-45f0-438b-8158-fd97d65508d9
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170627T075033Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
