@@ -202,6 +202,10 @@
       <Project>{b9e4ab2e-977a-42cd-8d48-f6cb72de8ac9}</Project>
       <Name>SiteCoreTrainings.Infrastructure</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SiteCoreTrainings.TDS_Entities\SiteCoreTrainings.TDS_Entities.csproj">
+      <Project>{98980fb3-2001-48cf-85c9-4cf94179357f}</Project>
+      <Name>SiteCoreTrainings.TDS_Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
