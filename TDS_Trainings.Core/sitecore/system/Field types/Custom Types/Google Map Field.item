@@ -1,0 +1,73 @@
+----item----
+version: 1
+id: {4B89BA5D-194B-4D14-99BB-432C9D5A3AE2}
+database: core
+path: /sitecore/system/Field types/Custom Types/Google Map Field
+parent: {4C26AA62-96F4-4F79-8135-DA22F62B4F28}
+name: Google Map Field
+master: {00000000-0000-0000-0000-000000000000}
+template: {F8A17D6A-118E-4CD7-B5F5-88FF37A4F237}
+templatekey: Template field type
+created: 20170621T114350:636336422306730000
+
+----field----
+field: {6BF5ED07-BC70-42F4-BB77-C017D340950E}
+name: Assembly
+key: assembly
+content-length: 32
+
+SiteCoreTrainings.Infrastructure
+----field----
+field: {9FE6154A-A16E-4827-99F6-F51533C34EC8}
+name: Class
+key: class
+content-length: 47
+
+SiteCoreTrainings.Infrastructure.GoogleMapField
+----version----
+language: en
+version: 1
+revision: c43c1486-b3b5-446b-81b9-7e0161025eee
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20170621T114350Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c43c1486-b3b5-446b-81b9-7e0161025eee
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20170621T121137Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
