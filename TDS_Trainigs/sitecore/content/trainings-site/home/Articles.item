@@ -30,13 +30,6 @@ content-length: 8
 
 Articles
 ----field----
-field: {C7FA39F5-C45F-4356-8D82-564E1278AE70}
-name: Articles
-key: articles
-content-length: 116
-
-{CFC9603F-F4BA-4980-A58A-1EF767D9A29D}|{234BAB3F-0EDB-423A-A3C7-332BD31217E1}|{842928E9-CCB4-4779-82B6-5375991CB214}
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created

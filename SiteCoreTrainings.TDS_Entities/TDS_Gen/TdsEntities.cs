@@ -149,10 +149,10 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 					/// <para></para>
 					/// <para>Field Type: lookup</para>		
 					/// <para>Field ID: f8bcf1db-83ad-47dd-a743-7f5c618d528e</para>
-					/// <para>Custom Data: </para>
+					/// <para>Custom Data: type=TDS_Gen.Trainings.Pages.IAuthor</para>
 					/// </summary>
 					[SitecoreField(IArticle_DetailsConstants.AuthorFieldName)]
-					Guid Author  {get; set;}
+					TDS_Gen.Trainings.Pages.IAuthor Author  {get; set;}
 			
 			
 					/// <summary>
@@ -291,11 +291,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para></para>
 				/// <para>Field Type: lookup</para>		
 				/// <para>Field ID: f8bcf1db-83ad-47dd-a743-7f5c618d528e</para>
-				/// <para>Custom Data: </para>
+				/// <para>Custom Data: type=TDS_Gen.Trainings.Pages.IAuthor</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IArticle_DetailsConstants.AuthorFieldName)]
-				public virtual Guid Author  {get; set;}
+				public virtual TDS_Gen.Trainings.Pages.IAuthor Author  {get; set;}
 					
 		
 				/// <summary>
@@ -671,10 +671,10 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 					/// <para></para>
 					/// <para>Field Type: TreelistEx</para>		
 					/// <para>Field ID: 92bc7e7a-0371-4f8d-98f0-edb58207d6a4</para>
-					/// <para>Custom Data: </para>
+					/// <para>Custom Data: generic=Image</para>
 					/// </summary>
 					[SitecoreField(IHomeConstants.Slider_ImagesFieldName)]
-					IEnumerable<Guid> Slider_Images  {get; set;}
+					IEnumerable<Image> Slider_Images  {get; set;}
 			
 			
 					/// <summary>
@@ -815,11 +815,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para></para>
 				/// <para>Field Type: TreelistEx</para>		
 				/// <para>Field ID: 92bc7e7a-0371-4f8d-98f0-edb58207d6a4</para>
-				/// <para>Custom Data: </para>
+				/// <para>Custom Data: generic=Image</para>
 				/// </summary>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IHomeConstants.Slider_ImagesFieldName)]
-				public virtual IEnumerable<Guid> Slider_Images  {get; set;}
+				public virtual IEnumerable<Image> Slider_Images  {get; set;}
 					
 		
 				/// <summary>
@@ -912,17 +912,6 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 	{
 			
 					/// <summary>
-					/// The Articles field.
-					/// <para></para>
-					/// <para>Field Type: tree list</para>		
-					/// <para>Field ID: c7fa39f5-c45f-4356-8d82-564e1278ae70</para>
-					/// <para>Custom Data: </para>
-					/// </summary>
-					[SitecoreField(IArticlesConstants.ArticlesFieldName)]
-					object /* UNKNOWN */ ArticlesList  {get; set;}
-			
-			
-					/// <summary>
 					/// The Title field.
 					/// <para></para>
 					/// <para>Field Type: Single-Line Text</para>		
@@ -942,11 +931,6 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "Articles";
 
-		
-			
-			public static readonly ID ArticlesFieldId = new ID("c7fa39f5-c45f-4356-8d82-564e1278ae70");
-			public const string ArticlesFieldName = "Articles";
-			
 		
 			
 			public static readonly ID TitleFieldId = new ID("e3b05dc5-1a89-4dfd-85a0-70bf62eef4cb");
@@ -987,18 +971,6 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 	public partial class Articles  : GlassBase, IArticles 
 	{
 	   
-		
-				/// <summary>
-				/// The Articles field.
-				/// <para></para>
-				/// <para>Field Type: tree list</para>		
-				/// <para>Field ID: c7fa39f5-c45f-4356-8d82-564e1278ae70</para>
-				/// <para>Custom Data: </para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IArticlesConstants.ArticlesFieldName)]
-				public virtual object /* UNKNOWN */ ArticlesList  {get; set;}
-					
 		
 				/// <summary>
 				/// The Title field.
@@ -1078,17 +1050,6 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 	{
 			
 					/// <summary>
-					/// The Authors field.
-					/// <para></para>
-					/// <para>Field Type: Treelist</para>		
-					/// <para>Field ID: ff219e5f-79ab-43eb-b375-2daa2888bfa0</para>
-					/// <para>Custom Data: </para>
-					/// </summary>
-					[SitecoreField(IAuthorsConstants.AuthorsFieldName)]
-					IEnumerable<Guid> AuthorsList  {get; set;}
-			
-			
-					/// <summary>
 					/// The Title field.
 					/// <para></para>
 					/// <para>Field Type: Single-Line Text</para>		
@@ -1108,11 +1069,6 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "Authors";
 
-		
-			
-			public static readonly ID AuthorsFieldId = new ID("ff219e5f-79ab-43eb-b375-2daa2888bfa0");
-			public const string AuthorsFieldName = "Authors";
-			
 		
 			
 			public static readonly ID TitleFieldId = new ID("09cfecbb-d50e-4e58-b7ac-e78fca62e63d");
@@ -1153,18 +1109,6 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 	public partial class Authors  : GlassBase, IAuthors 
 	{
 	   
-		
-				/// <summary>
-				/// The Authors field.
-				/// <para></para>
-				/// <para>Field Type: Treelist</para>		
-				/// <para>Field ID: ff219e5f-79ab-43eb-b375-2daa2888bfa0</para>
-				/// <para>Custom Data: </para>
-				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IAuthorsConstants.AuthorsFieldName)]
-				public virtual IEnumerable<Guid> AuthorsList  {get; set;}
-					
 		
 				/// <summary>
 				/// The Title field.

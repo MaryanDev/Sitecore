@@ -11,6 +11,8 @@ using SiteCoreTrainings.Data.Constants;
 using SiteCoreTrainings.Data.Models;
 using SiteCoreTrainings.Data.Search;
 using Sitecore.Data.Items;
+using SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages;
+using Comment = SiteCoreTrainings.Data.Models.Comment;
 
 namespace SiteCoreTrainings.Data.Services
 {

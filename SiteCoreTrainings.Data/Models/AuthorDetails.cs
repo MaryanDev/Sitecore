@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Glass.Mapper.Sc.Configuration;
 using Glass.Mapper.Sc.Configuration.Attributes;
 using Glass.Mapper.Sc.Fields;
+using SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages;
 
 namespace SiteCoreTrainings.Data.Models
 {

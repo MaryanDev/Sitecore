@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="App_Start\GlassMapperSc.cs" />
     <Compile Include="App_Start\GlassMapperScCustom.cs" />
+    <Compile Include="Custom TDS Entities\Concrete\GlassBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TDS_Gen\TdsEntities.cs" />
   </ItemGroup>
@@ -69,6 +70,9 @@
     <None Include="App_Config\Include\Glass.Mapper.Sc.Start.config" />
     <None Include="App_Config\Include\z.Glass.Mapper.Sc.ViewRender.config.exclude" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Custom TDS Entities\Interfaces\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

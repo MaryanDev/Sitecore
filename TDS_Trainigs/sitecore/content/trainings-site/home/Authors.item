@@ -23,13 +23,6 @@ content-length: 7
 
 Authors
 ----field----
-field: {FF219E5F-79AB-43EB-B375-2DAA2888BFA0}
-name: Authors
-key: authors
-content-length: 77
-
-{0587CB97-265F-4962-B4BC-AB742762A785}|{40679603-D41F-4D73-A8D6-2A6DB20851ED}
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created

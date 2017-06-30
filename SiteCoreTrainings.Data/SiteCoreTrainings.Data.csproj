@@ -97,6 +97,10 @@
       <Project>{B9E4AB2E-977A-42CD-8D48-F6CB72DE8AC9}</Project>
       <Name>SiteCoreTrainings.Infrastructure</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SiteCoreTrainings.TDS_Entities\SiteCoreTrainings.TDS_Entities.csproj">
+      <Project>{98980fb3-2001-48cf-85c9-4cf94179357f}</Project>
+      <Name>SiteCoreTrainings.TDS_Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App_Config\Include\Glass.Mapper.Sc.CodeFirst.config.exclude" />
