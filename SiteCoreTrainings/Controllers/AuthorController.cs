@@ -10,7 +10,8 @@ using SiteCoreTrainings.Data.Services;
 using SiteCoreTrainings.Models.ViewModels;
 using SiteCoreTrainings.TDS_Entities.TDS_Gen;
 using SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages;
-using Comment = SiteCoreTrainings.Data.Models.Comment;
+using PaginationDetails = SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages.PaginationDetails;
+using Comment = SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages.Comment;
 
 namespace SiteCoreTrainings.Controllers
 {
@@ -58,9 +59,9 @@ namespace SiteCoreTrainings.Controllers
             {
                 var commentToAdd = new Comment
                 {
-                    Id = new ID(Guid.NewGuid()),
-                    CommentText = comment.CommentText,
-                    CommentAuthor = comment.CommentAuthor,
+                    Id = Guid.NewGuid(),
+                    Comment_Text = comment.CommentText,
+                    Comment_Author = comment.CommentAuthor,
                     DateCreated = DateTime.Now,
                     Name = comment.CommentAuthor + " " + DateTime.Now.ToString("yyyy MMMM dd")
                 };

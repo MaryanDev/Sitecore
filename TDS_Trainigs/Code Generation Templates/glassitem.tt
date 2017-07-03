@@ -91,7 +91,7 @@ namespace <#= GetNamespace(DefaultNamespace, template)#>
 			public static readonly ID <#= GetPropertyName(field) #>FieldId = new ID("<#=field.ID.ToString()#>");
 			public const string <#= GetPropertyName(field) #>FieldName = "<#=field.Name#>";
 			
-		<#}#>	
+		<#}#>
 
 	}
 
@@ -116,11 +116,16 @@ if (!IsInterfaceWord(template.Name)){ #>
 				/// <para>Field ID: <#=field.ID.ToString()#></para>
 				/// <para>Custom Data: <#=field.Data#></para>
 				/// </summary>
+				<# if (GetPropertyName(field) == "Comment_Text")  { #>
+					[global::System.CodeDom.Compiler.GeneratedCodeAttribute("<#=Tool#>", "<#=ToolVersion#>")]
+					[SitecoreField(<#= AsInterfaceName(template.Name) #>Constants.<#= GetPropertyName(field) #>FieldName, Setting = SitecoreFieldSettings.RichTextRaw)]
+					public virtual <#=GetGlassFieldType(field)#> <#= GetPropertyName(field) #>  {get; set;}
+				<# } else { #>
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("<#=Tool#>", "<#=ToolVersion#>")]
 				[SitecoreField(<#= AsInterfaceName(template.Name) #>Constants.<#= GetPropertyName(field) #>FieldName)]
 				public virtual <#=GetGlassFieldType(field)#> <#= GetPropertyName(field) #>  {get; set;}
-					
-		<#}#>	
+				<# } #>
+		<#}#>
 	}
 <#}#>
 }

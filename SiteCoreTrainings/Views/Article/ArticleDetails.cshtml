@@ -1,20 +1,22 @@
 ﻿@using Glass.Mapper.Sc.Web.Mvc
 @using Sitecore.Mvc
-@model SiteCoreTrainings.Data.Models.IArticleDetails
+@using SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages;
+@*@model SiteCoreTrainings.Data.Models.IArticleDetails*@
+@model SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages.Article_Details
 
 <div class="text-center">
     <div class="container">
         <div class="row data-panel">
-            <h1>@Html.Glass().Editable(m => m.PageTitle)</h1>
-            <div>@Html.Glass().RenderImage(m => m.ArticleImage)</div>
+            <h1>@Html.Glass().Editable(m => m.Page_Title)</h1>
+            <div>@Html.Glass().RenderImage(m => m.Article_Image)</div>
             <p class="text-left">
-                @Html.Glass().Editable(m => m.MainBody)
+                @Html.Glass().Editable(m => m.Main_Body)
             </p>
             <p>
                 Likes - <span id="@Model.Id" class="glyphicon glyphicon-thumbs-up like-sign">@Html.Glass().Editable(m => m.Likes)</span>
             </p>
 
-            <span>Date Created: @Html.Glass().Editable(m => m.Date); Author - <a href="@Model.Author.Url">@Html.Glass().Editable(a => a.Author.FullName)</a></span>
+            <span>Date Created: @Html.Glass().Editable(m => m.Date); Author - <a href="@Model.Author.Url">@Html.Glass().Editable(a => a.Author.Full_Name)</a></span>
         </div>
         @Html.Sitecore().Placeholder("CommentsForm")
         @Html.Partial("Comments/CommentsList", Model.Comments)

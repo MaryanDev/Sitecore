@@ -7,6 +7,9 @@ using Sitecore.SecurityModel;
 using SiteCoreTrainings.Data.Models;
 using SiteCoreTrainings.Data.Services;
 using SiteCoreTrainings.Models.ViewModels;
+using SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages;
+using Comment = SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages.Comment;
+using PaginationDetails = SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages.PaginationDetails;
 
 namespace SiteCoreTrainings.Controllers
 {
@@ -45,7 +48,7 @@ namespace SiteCoreTrainings.Controllers
 
         public ActionResult ArticleDetails()
         {
-            var context = SitecoreContext.GetCurrentItem<IArticleDetails>();
+            var context = SitecoreContext.GetCurrentItem<Article_Details>();
             return View(context);
         }
 
@@ -59,14 +62,14 @@ namespace SiteCoreTrainings.Controllers
         //[ValidateFormHandler]
         public ActionResult CommentsForm(CommentViewModel comment)
         {
-            IArticleDetails page = SitecoreContext.GetCurrentItem<IArticleDetails>();
+            Article_Details page = SitecoreContext.GetCurrentItem<Article_Details>();
             if (ModelState.IsValid)
             {
                 var commentToAdd = new Comment
                 {
-                    Id = new ID(Guid.NewGuid()),
-                    CommentText = comment.CommentText,
-                    CommentAuthor = comment.CommentAuthor,
+                    Id = Guid.NewGuid(),
+                    Comment_Text = comment.CommentText,
+                    Comment_Author = comment.CommentAuthor,
                     DateCreated = DateTime.Now,
                     Name = comment.CommentAuthor + " " + DateTime.Now.ToString("yyyy MMMM dd")
                 };

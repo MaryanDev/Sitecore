@@ -68,7 +68,7 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen
 	public abstract partial class GlassBase : IGlassBase{
 		
 		[SitecoreId]
-		public virtual Guid Id{ get; private set;}
+		public virtual Guid Id{ get; set;}
 
 		[SitecoreInfo(SitecoreInfoType.Language)]
         public virtual Language Language{ get; private set; }
@@ -100,7 +100,7 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Base
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "Base";
 
-			
+		
 
 	}
 
@@ -115,7 +115,7 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Base
 	public partial class Base  : GlassBase, IBase 
 	{
 	   
-			
+		
 	}
 
 }
@@ -258,7 +258,7 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 			public static readonly ID Meta_TitleFieldId = new ID("754c4413-bc38-4902-a1d6-8ef0046e250a");
 			public const string Meta_TitleFieldName = "Meta Title";
 			
-			
+		
 
 	}
 
@@ -281,10 +281,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: fe1e0961-6a48-44f0-be52-9af346a068ad</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IArticle_DetailsConstants.Article_ImageFieldName)]
 				public virtual Image Article_Image  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Author field.
@@ -293,10 +294,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: f8bcf1db-83ad-47dd-a743-7f5c618d528e</para>
 				/// <para>Custom Data: type=TDS_Gen.Trainings.Pages.IAuthor</para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IArticle_DetailsConstants.AuthorFieldName)]
 				public virtual TDS_Gen.Trainings.Pages.IAuthor Author  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Date field.
@@ -305,10 +307,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 221bce6a-7d28-4a27-b89f-0b450b8ff08e</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IArticle_DetailsConstants.DateFieldName)]
 				public virtual DateTime Date  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Likes field.
@@ -317,10 +320,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: f50e22b6-1e20-4c2d-8863-aefdba844fd2</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IArticle_DetailsConstants.LikesFieldName)]
 				public virtual float Likes  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Main Body field.
@@ -329,10 +333,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 60ade6be-767c-48ad-a49f-b55b463ada13</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IArticle_DetailsConstants.Main_BodyFieldName)]
 				public virtual string Main_Body  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Page Title field.
@@ -341,10 +346,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: cbabc9e0-9797-4161-ada9-4b28e871d4a8</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IArticle_DetailsConstants.Page_TitleFieldName)]
 				public virtual string Page_Title  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The FooterContent field.
@@ -353,10 +359,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 98b43507-8c2c-443c-bf65-1a72a1357fc2</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IArticle_DetailsConstants.FooterContentFieldName)]
 				public virtual string FooterContent  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Meta Description field.
@@ -365,10 +372,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 852b5364-8f11-4a55-9dbc-7f3d4022a179</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IArticle_DetailsConstants.Meta_DescriptionFieldName)]
 				public virtual string Meta_Description  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Meta Keywords field.
@@ -377,10 +385,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 38b84772-078f-4e4c-9715-a5fe9254aeb3</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IArticle_DetailsConstants.Meta_KeywordsFieldName)]
 				public virtual string Meta_Keywords  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Meta Title field.
@@ -389,11 +398,12 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 754c4413-bc38-4902-a1d6-8ef0046e250a</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IArticle_DetailsConstants.Meta_TitleFieldName)]
 				public virtual string Meta_Title  {get; set;}
-					
-			
+				
+		
 	}
 
 }
@@ -504,7 +514,7 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 			public static readonly ID Meta_TitleFieldId = new ID("754c4413-bc38-4902-a1d6-8ef0046e250a");
 			public const string Meta_TitleFieldName = "Meta Title";
 			
-			
+		
 
 	}
 
@@ -527,10 +537,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 8340b53e-5f2d-40c9-b6d3-ccd872e28cbc</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IAuthorConstants.BioFieldName)]
 				public virtual string Bio  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Date of Birth field.
@@ -539,10 +550,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 1bd42e86-d736-421c-bad6-42944bb11193</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IAuthorConstants.Date_Of_BirthFieldName)]
 				public virtual DateTime Date_Of_Birth  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Full Name field.
@@ -551,10 +563,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: ac4a4ea4-42f9-4387-a113-1ec40b17c844</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IAuthorConstants.Full_NameFieldName)]
 				public virtual string Full_Name  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Profile Image field.
@@ -563,10 +576,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: de28c9c4-43d1-4779-a0c0-adea117dbf90</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IAuthorConstants.Profile_ImageFieldName)]
 				public virtual Image Profile_Image  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The FooterContent field.
@@ -575,10 +589,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 98b43507-8c2c-443c-bf65-1a72a1357fc2</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IAuthorConstants.FooterContentFieldName)]
 				public virtual string FooterContent  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Meta Description field.
@@ -587,10 +602,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 852b5364-8f11-4a55-9dbc-7f3d4022a179</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IAuthorConstants.Meta_DescriptionFieldName)]
 				public virtual string Meta_Description  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Meta Keywords field.
@@ -599,10 +615,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 38b84772-078f-4e4c-9715-a5fe9254aeb3</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IAuthorConstants.Meta_KeywordsFieldName)]
 				public virtual string Meta_Keywords  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Meta Title field.
@@ -611,11 +628,12 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 754c4413-bc38-4902-a1d6-8ef0046e250a</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IAuthorConstants.Meta_TitleFieldName)]
 				public virtual string Meta_Title  {get; set;}
-					
-			
+				
+		
 	}
 
 }
@@ -758,7 +776,7 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 			public static readonly ID Meta_TitleFieldId = new ID("754c4413-bc38-4902-a1d6-8ef0046e250a");
 			public const string Meta_TitleFieldName = "Meta Title";
 			
-			
+		
 
 	}
 
@@ -781,10 +799,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 14a57c2d-6f57-45a0-b1b2-3ca86cbbee36</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IHomeConstants.AddressFieldName)]
 				public virtual object /* UNKNOWN */ Address  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Html field.
@@ -793,10 +812,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 31449dd2-7c4d-41a6-bedf-d332250f6416</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IHomeConstants.HtmlFieldName)]
 				public virtual string Html  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Page Header field.
@@ -805,10 +825,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: fbdc1f55-5fb8-4198-9a8b-9364b57d4a23</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IHomeConstants.Page_HeaderFieldName)]
 				public virtual string Page_Header  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Slider Images field.
@@ -817,10 +838,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 92bc7e7a-0371-4f8d-98f0-edb58207d6a4</para>
 				/// <para>Custom Data: generic=Image</para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IHomeConstants.Slider_ImagesFieldName)]
 				public virtual IEnumerable<Image> Slider_Images  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Title field.
@@ -829,10 +851,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 978c53ad-fcc4-4deb-9949-8b5838fdda0c</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IHomeConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Youtube Video field.
@@ -841,10 +864,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 0162366e-b2c0-40c2-ab54-7021cd5ec790</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IHomeConstants.Youtube_VideoFieldName)]
 				public virtual string Youtube_Video  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The FooterContent field.
@@ -853,10 +877,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 98b43507-8c2c-443c-bf65-1a72a1357fc2</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IHomeConstants.FooterContentFieldName)]
 				public virtual string FooterContent  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Meta Description field.
@@ -865,10 +890,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 852b5364-8f11-4a55-9dbc-7f3d4022a179</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IHomeConstants.Meta_DescriptionFieldName)]
 				public virtual string Meta_Description  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Meta Keywords field.
@@ -877,10 +903,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 38b84772-078f-4e4c-9715-a5fe9254aeb3</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IHomeConstants.Meta_KeywordsFieldName)]
 				public virtual string Meta_Keywords  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Meta Title field.
@@ -889,11 +916,12 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 754c4413-bc38-4902-a1d6-8ef0046e250a</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IHomeConstants.Meta_TitleFieldName)]
 				public virtual string Meta_Title  {get; set;}
-					
-			
+				
+		
 	}
 
 }
@@ -956,7 +984,7 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 			public static readonly ID Meta_TitleFieldId = new ID("754c4413-bc38-4902-a1d6-8ef0046e250a");
 			public const string Meta_TitleFieldName = "Meta Title";
 			
-			
+		
 
 	}
 
@@ -979,10 +1007,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: e3b05dc5-1a89-4dfd-85a0-70bf62eef4cb</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IArticlesConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The FooterContent field.
@@ -991,10 +1020,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 98b43507-8c2c-443c-bf65-1a72a1357fc2</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IArticlesConstants.FooterContentFieldName)]
 				public virtual string FooterContent  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Meta Description field.
@@ -1003,10 +1033,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 852b5364-8f11-4a55-9dbc-7f3d4022a179</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IArticlesConstants.Meta_DescriptionFieldName)]
 				public virtual string Meta_Description  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Meta Keywords field.
@@ -1015,10 +1046,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 38b84772-078f-4e4c-9715-a5fe9254aeb3</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IArticlesConstants.Meta_KeywordsFieldName)]
 				public virtual string Meta_Keywords  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Meta Title field.
@@ -1027,11 +1059,12 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 754c4413-bc38-4902-a1d6-8ef0046e250a</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IArticlesConstants.Meta_TitleFieldName)]
 				public virtual string Meta_Title  {get; set;}
-					
-			
+				
+		
 	}
 
 }
@@ -1094,7 +1127,7 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 			public static readonly ID Meta_TitleFieldId = new ID("754c4413-bc38-4902-a1d6-8ef0046e250a");
 			public const string Meta_TitleFieldName = "Meta Title";
 			
-			
+		
 
 	}
 
@@ -1117,10 +1150,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 09cfecbb-d50e-4e58-b7ac-e78fca62e63d</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IAuthorsConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The FooterContent field.
@@ -1129,10 +1163,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 98b43507-8c2c-443c-bf65-1a72a1357fc2</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IAuthorsConstants.FooterContentFieldName)]
 				public virtual string FooterContent  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Meta Description field.
@@ -1141,10 +1176,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 852b5364-8f11-4a55-9dbc-7f3d4022a179</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IAuthorsConstants.Meta_DescriptionFieldName)]
 				public virtual string Meta_Description  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Meta Keywords field.
@@ -1153,10 +1189,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 38b84772-078f-4e4c-9715-a5fe9254aeb3</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IAuthorsConstants.Meta_KeywordsFieldName)]
 				public virtual string Meta_Keywords  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Meta Title field.
@@ -1165,11 +1202,12 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 754c4413-bc38-4902-a1d6-8ef0046e250a</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IAuthorsConstants.Meta_TitleFieldName)]
 				public virtual string Meta_Title  {get; set;}
-					
-			
+				
+		
 	}
 
 }
@@ -1212,7 +1250,7 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Parameters
 			public static readonly ID ValueFieldId = new ID("53c47a96-b783-49bb-a391-371ca09ebc9d");
 			public const string ValueFieldName = "Value";
 			
-			
+		
 
 	}
 
@@ -1235,11 +1273,12 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Parameters
 				/// <para>Field ID: 53c47a96-b783-49bb-a391-371ca09ebc9d</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(ITest_ParameterConstants.ValueFieldName)]
 				public virtual string Value  {get; set;}
-					
-			
+				
+		
 	}
 
 }
@@ -1318,7 +1357,7 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 			public static readonly ID Meta_TitleFieldId = new ID("754c4413-bc38-4902-a1d6-8ef0046e250a");
 			public const string Meta_TitleFieldName = "Meta Title";
 			
-			
+		
 
 	}
 
@@ -1341,10 +1380,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 4554869c-5ff2-48b4-9a1c-7da711b25dcc</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(ICommentConstants.Comment_AuthorFieldName)]
 				public virtual string Comment_Author  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Comment Text field.
@@ -1353,10 +1393,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: b346356c-0c17-4a87-8b11-e4460ae820e8</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(ICommentConstants.Comment_TextFieldName)]
-				public virtual string Comment_Text  {get; set;}
-					
+				
+					[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+					[SitecoreField(ICommentConstants.Comment_TextFieldName, Setting = SitecoreFieldSettings.RichTextRaw)]
+					public virtual string Comment_Text  {get; set;}
+				
 		
 				/// <summary>
 				/// The FooterContent field.
@@ -1365,10 +1406,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 98b43507-8c2c-443c-bf65-1a72a1357fc2</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(ICommentConstants.FooterContentFieldName)]
 				public virtual string FooterContent  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Meta Description field.
@@ -1377,10 +1419,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 852b5364-8f11-4a55-9dbc-7f3d4022a179</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(ICommentConstants.Meta_DescriptionFieldName)]
 				public virtual string Meta_Description  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Meta Keywords field.
@@ -1389,10 +1432,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 38b84772-078f-4e4c-9715-a5fe9254aeb3</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(ICommentConstants.Meta_KeywordsFieldName)]
 				public virtual string Meta_Keywords  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Meta Title field.
@@ -1401,11 +1445,12 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para>Field ID: 754c4413-bc38-4902-a1d6-8ef0046e250a</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(ICommentConstants.Meta_TitleFieldName)]
 				public virtual string Meta_Title  {get; set;}
-					
-			
+				
+		
 	}
 
 }
@@ -1432,7 +1477,7 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Folders
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "Global Cinfiguration";
 
-			
+		
 
 	}
 
@@ -1447,7 +1492,7 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Folders
 	public partial class Global_Cinfiguration  : GlassBase, IGlobal_Cinfiguration 
 	{
 	   
-			
+		
 	}
 
 }
@@ -1526,7 +1571,7 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Account
 			public static readonly ID Meta_TitleFieldId = new ID("754c4413-bc38-4902-a1d6-8ef0046e250a");
 			public const string Meta_TitleFieldName = "Meta Title";
 			
-			
+		
 
 	}
 
@@ -1549,10 +1594,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Account
 				/// <para>Field ID: c21e4db9-8646-43fb-8009-0ed95abc722f</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IAccount_PageConstants.BodyFieldName)]
 				public virtual string Body  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Title field.
@@ -1561,10 +1607,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Account
 				/// <para>Field ID: 985d5abb-c80c-4155-8097-83bcb1b83e42</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IAccount_PageConstants.TitleFieldName)]
 				public virtual string Title  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The FooterContent field.
@@ -1573,10 +1620,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Account
 				/// <para>Field ID: 98b43507-8c2c-443c-bf65-1a72a1357fc2</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IAccount_PageConstants.FooterContentFieldName)]
 				public virtual string FooterContent  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Meta Description field.
@@ -1585,10 +1633,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Account
 				/// <para>Field ID: 852b5364-8f11-4a55-9dbc-7f3d4022a179</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IAccount_PageConstants.Meta_DescriptionFieldName)]
 				public virtual string Meta_Description  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Meta Keywords field.
@@ -1597,10 +1646,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Account
 				/// <para>Field ID: 38b84772-078f-4e4c-9715-a5fe9254aeb3</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IAccount_PageConstants.Meta_KeywordsFieldName)]
 				public virtual string Meta_Keywords  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Meta Title field.
@@ -1609,11 +1659,12 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Account
 				/// <para>Field ID: 754c4413-bc38-4902-a1d6-8ef0046e250a</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IAccount_PageConstants.Meta_TitleFieldName)]
 				public virtual string Meta_Title  {get; set;}
-					
-			
+				
+		
 	}
 
 }
@@ -1640,7 +1691,7 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Folders
 			public static readonly ID TemplateId = new ID(TemplateIdString);
 			public const string TemplateName = "Site Folder";
 
-			
+		
 
 	}
 
@@ -1655,7 +1706,7 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Folders
 	public partial class Site_Folder  : GlassBase, ISite_Folder 
 	{
 	   
-			
+		
 	}
 
 }
@@ -1746,7 +1797,7 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Base
 			public static readonly ID Meta_TitleFieldId = new ID("754c4413-bc38-4902-a1d6-8ef0046e250a");
 			public const string Meta_TitleFieldName = "Meta Title";
 			
-			
+		
 
 	}
 
@@ -1769,10 +1820,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Base
 				/// <para>Field ID: 98b43507-8c2c-443c-bf65-1a72a1357fc2</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IBase_PageConstants.FooterContentFieldName)]
 				public virtual string FooterContent  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Meta Description field.
@@ -1781,10 +1833,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Base
 				/// <para>Field ID: 852b5364-8f11-4a55-9dbc-7f3d4022a179</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IBase_PageConstants.Meta_DescriptionFieldName)]
 				public virtual string Meta_Description  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Meta Keywords field.
@@ -1793,10 +1846,11 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Base
 				/// <para>Field ID: 38b84772-078f-4e4c-9715-a5fe9254aeb3</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IBase_PageConstants.Meta_KeywordsFieldName)]
 				public virtual string Meta_Keywords  {get; set;}
-					
+				
 		
 				/// <summary>
 				/// The Meta Title field.
@@ -1805,11 +1859,12 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Base
 				/// <para>Field ID: 754c4413-bc38-4902-a1d6-8ef0046e250a</para>
 				/// <para>Custom Data: </para>
 				/// </summary>
+				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IBase_PageConstants.Meta_TitleFieldName)]
 				public virtual string Meta_Title  {get; set;}
-					
-			
+				
+		
 	}
 
 }

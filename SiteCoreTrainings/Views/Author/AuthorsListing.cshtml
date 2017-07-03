@@ -1,5 +1,6 @@
 ﻿@using Glass.Mapper.Sc.Web.Mvc
-@model SiteCoreTrainings.Data.Models.IAuthorsPage
+@*@model SiteCoreTrainings.Data.Models.IAuthorsPage*@
+@model SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages.Authors
 
 <div class="container-fluid">
     <div class="row">
@@ -16,8 +17,8 @@
                 @foreach (var author in Model.AuthorsList)
                 {
                     <tr>
-                        <td><a href="@author.Url">@author.FullName</a></td>
-                        <td>@author.DateOfBirth</td>
+                        <td><a href="@author.Url">@author.Full_Name</a></td>
+                        <td>@author.Date_Of_Birth</td>
                     </tr>
                 }
                 </tbody>

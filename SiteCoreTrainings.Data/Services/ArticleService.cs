@@ -13,20 +13,22 @@ using Sitecore.Web.UI.HtmlControls;
 using SiteCoreTrainings.Data.Constants;
 using SiteCoreTrainings.Data.Models;
 using SiteCoreTrainings.Data.Search;
+using SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages;
+using Comment = SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages.Comment;
 
 namespace SiteCoreTrainings.Data.Services
 {
     public class ArticleService : BaseService
     {
-        public IArticlesPage GetArticlesPage(int page, int pageSize, ID startPath)
+        public Articles GetArticlesPage(int page, int pageSize, ID startPath)
         {
             using (
                 var context =
                     Sitecore.ContentSearch.ContentSearchManager.CreateSearchContext(
                         new Sitecore.ContentSearch.SitecoreIndexableItem(Sitecore.Context.Item)))
             {
-                IArticlesPage articlesPage = _sitecoreWebDbService.CreateType<IArticlesPage>(Sitecore.Context.Database.GetItem(startPath));
-                articlesPage.ArticlesList = new List<IArticleDetails>();
+                Articles articlesPage = _sitecoreWebDbService.CreateType<Articles>(Sitecore.Context.Database.GetItem(startPath));
+                articlesPage.ArticlesList = new List<Article_Details>();
 
                 var query = context.GetQueryable<SearchResultItem>();
                 query = query
@@ -37,7 +39,7 @@ namespace SiteCoreTrainings.Data.Services
                 foreach (var item in query)
                 {
                     var aritem = item.GetItem();
-                    IArticleDetails article = _sitecoreWebDbService.CreateType<IArticleDetails>(aritem);
+                    Article_Details article = _sitecoreWebDbService.CreateType<Article_Details>(aritem);
                     if (article != null)
                     {
                         articlesPage.ArticlesList.Add(article);
@@ -47,13 +49,13 @@ namespace SiteCoreTrainings.Data.Services
             }
         }
 
-        public IArticlesPage GetArticlesPageV2(int page, int pageSize)
+        public Articles GetArticlesPageV2(int page, int pageSize)
         {
             Item articlesPageItem =
                 _database.SelectSingleItem(BlogConstants.FastArticlesPageSitecoreQuery);
 
-            IArticlesPage articlesPage = _sitecoreWebDbService.CreateType<IArticlesPage>(articlesPageItem);
-            articlesPage.ArticlesList = new List<IArticleDetails>();
+            Articles articlesPage = _sitecoreWebDbService.CreateType<Articles>(articlesPageItem);
+            articlesPage.ArticlesList = new List<Article_Details>();
 
             IQueryable<Item> articlesItems =
                 _database.SelectItems(
@@ -62,13 +64,13 @@ namespace SiteCoreTrainings.Data.Services
 
             foreach (var article in articlesItems)
             {
-                articlesPage.ArticlesList.Add(_sitecoreWebDbService.CreateType<IArticleDetails>(article));
+                articlesPage.ArticlesList.Add(_sitecoreWebDbService.CreateType<Article_Details>(article));
             }
 
             return articlesPage;
         }
 
-        public void InsertComment(IArticleDetails page, Comment comment)
+        public void InsertComment(Article_Details page, Comment comment)
         {
             using (new SecurityDisabler())
             {

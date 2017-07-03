@@ -60,7 +60,13 @@
   <ItemGroup>
     <Compile Include="App_Start\GlassMapperSc.cs" />
     <Compile Include="App_Start\GlassMapperScCustom.cs" />
+    <Compile Include="Custom TDS Entities\Concrete\Articles.cs" />
+    <Compile Include="Custom TDS Entities\Concrete\Article_Details.cs" />
+    <Compile Include="Custom TDS Entities\Concrete\Author.cs" />
+    <Compile Include="Custom TDS Entities\Concrete\Authors.cs" />
+    <Compile Include="Custom TDS Entities\Concrete\Comment.cs" />
     <Compile Include="Custom TDS Entities\Concrete\GlassBase.cs" />
+    <Compile Include="Custom TDS Entities\Concrete\PaginationDetails.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TDS_Gen\TdsEntities.cs" />
   </ItemGroup>

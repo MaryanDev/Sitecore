@@ -1,4 +1,5 @@
-﻿@model IEnumerable<SiteCoreTrainings.Data.Models.Comment>
+﻿@*@model IEnumerable<SiteCoreTrainings.Data.Models.Comment>*@
+@model IEnumerable<SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages.Comment>
 <div class="container">
     <div class="row">
         <div class="col-md-6 col-md-push-3">
@@ -6,8 +7,8 @@
             {
                 foreach (var comment in Model)
                 {
-                    <div><h4>@comment.CommentAuthor</h4></div>
-                    <div class="data-comment" >@Html.Raw(comment.CommentText)</div>
+                    <div><h4>@comment.Comment_Author</h4></div>
+                    <div class="data-comment" >@Html.Raw(comment.Comment_Text)</div>
                     <div class="text-right">@comment.DateCreated.ToShortDateString()</div>
                     <hr />
                 }

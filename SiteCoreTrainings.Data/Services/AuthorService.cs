@@ -12,21 +12,21 @@ using SiteCoreTrainings.Data.Models;
 using SiteCoreTrainings.Data.Search;
 using Sitecore.Data.Items;
 using SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages;
-using Comment = SiteCoreTrainings.Data.Models.Comment;
+using Comment = SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages.Comment;
 
 namespace SiteCoreTrainings.Data.Services
 {
     public class AuthorService : BaseService
     {
-        public IAuthorsPage GetAuthorsPage(int page, int pageSize, ID startPath)
+        public Authors GetAuthorsPage(int page, int pageSize, ID startPath)
         {
             using (
                 var context =
                     Sitecore.ContentSearch.ContentSearchManager.CreateSearchContext(
                         new Sitecore.ContentSearch.SitecoreIndexableItem(Sitecore.Context.Item)))
             {
-                IAuthorsPage authorsPage = _sitecoreWebDbService.CreateType<IAuthorsPage>(Sitecore.Context.Database.GetItem(startPath));
-                authorsPage.AuthorsList = new List<IAuthorDetails>();
+                Authors authorsPage = _sitecoreWebDbService.CreateType<Authors>(Sitecore.Context.Database.GetItem(startPath));
+                authorsPage.AuthorsList = new List<Author>();
 
                 var query = context.GetQueryable<SearchResultItem>();
                 query = query.Where(i => i.Paths.Contains(startPath) && i.TemplateId == BlogConstants.AuthorDetailsTemplateId)
@@ -35,7 +35,7 @@ namespace SiteCoreTrainings.Data.Services
 
                 foreach (var item in query)
                 {
-                    IAuthorDetails author = _sitecoreWebDbService.CreateType<IAuthorDetails>(item.GetItem());
+                    Author author = _sitecoreWebDbService.CreateType<Author>(item.GetItem());
                     if (author != null)
                     {
                         authorsPage.AuthorsList.Add(author);
@@ -45,7 +45,7 @@ namespace SiteCoreTrainings.Data.Services
             }
         }
 
-        public IAuthorDetails GetAuthorDetails(ID startPath, ID articlesPath)
+        public Author GetAuthorDetails(ID startPath, ID articlesPath)
         {
             using (
                 var context =
@@ -54,15 +54,15 @@ namespace SiteCoreTrainings.Data.Services
             )
             {
                 var author =
-                    _sitecoreWebDbService.CreateType<IAuthorDetails>(Sitecore.Context.Database.GetItem(startPath));
-                author.Articles = new List<IArticleDetails>();
+                    _sitecoreWebDbService.CreateType<Author>(Sitecore.Context.Database.GetItem(startPath));
+                author.Articles = new List<Article_Details>();
 
                 var query = context.GetQueryable<ArticleSearchItem>();
-                query = query.Where(a => a.Paths.Contains(articlesPath) && a.Author == author.Id.Guid && a.TemplateId == BlogConstants.ArticleDetailsTemplateId);
+                query = query.Where(a => a.Paths.Contains(articlesPath) && a.Author == author.Id && a.TemplateId == BlogConstants.ArticleDetailsTemplateId);
 
                 foreach (var article in query)
                 {
-                    var concreteArticle = _sitecoreWebDbService.CreateType<IArticleDetails>(article.GetItem());
+                    var concreteArticle = _sitecoreWebDbService.CreateType<Article_Details>(article.GetItem());
 
                     author.Articles.Add(concreteArticle);
                 }
