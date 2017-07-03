@@ -55,7 +55,7 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen
 	public partial interface IGlassBase{
 		
 		[SitecoreId]
-		Guid Id{ get; set; }
+		Guid Id{ get; }
 
 		[SitecoreInfo(SitecoreInfoType.Language)]
         Language Language{ get; }
@@ -134,6 +134,17 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 	{
 			
 					/// <summary>
+					/// The Article Author field.
+					/// <para></para>
+					/// <para>Field Type: lookup</para>		
+					/// <para>Field ID: f8bcf1db-83ad-47dd-a743-7f5c618d528e</para>
+					/// <para>Custom Data: type=TDS_Gen.Trainings.Pages.IAuthor</para>
+					/// </summary>
+					[SitecoreField(IArticle_DetailsConstants.Article_AuthorFieldName)]
+					TDS_Gen.Trainings.Pages.IAuthor Article_Author  {get; set;}
+			
+			
+					/// <summary>
 					/// The Article Image field.
 					/// <para></para>
 					/// <para>Field Type: Image</para>		
@@ -142,17 +153,6 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 					/// </summary>
 					[SitecoreField(IArticle_DetailsConstants.Article_ImageFieldName)]
 					Image Article_Image  {get; set;}
-			
-			
-					/// <summary>
-					/// The Author field.
-					/// <para></para>
-					/// <para>Field Type: lookup</para>		
-					/// <para>Field ID: f8bcf1db-83ad-47dd-a743-7f5c618d528e</para>
-					/// <para>Custom Data: type=TDS_Gen.Trainings.Pages.IAuthor</para>
-					/// </summary>
-					[SitecoreField(IArticle_DetailsConstants.AuthorFieldName)]
-					TDS_Gen.Trainings.Pages.IAuthor Author  {get; set;}
 			
 			
 					/// <summary>
@@ -210,13 +210,13 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 
 		
 			
-			public static readonly ID Article_ImageFieldId = new ID("fe1e0961-6a48-44f0-be52-9af346a068ad");
-			public const string Article_ImageFieldName = "Article Image";
+			public static readonly ID Article_AuthorFieldId = new ID("f8bcf1db-83ad-47dd-a743-7f5c618d528e");
+			public const string Article_AuthorFieldName = "Article Author";
 			
 		
 			
-			public static readonly ID AuthorFieldId = new ID("f8bcf1db-83ad-47dd-a743-7f5c618d528e");
-			public const string AuthorFieldName = "Author";
+			public static readonly ID Article_ImageFieldId = new ID("fe1e0961-6a48-44f0-be52-9af346a068ad");
+			public const string Article_ImageFieldName = "Article Image";
 			
 		
 			
@@ -275,6 +275,19 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 	   
 		
 				/// <summary>
+				/// The Article Author field.
+				/// <para></para>
+				/// <para>Field Type: lookup</para>		
+				/// <para>Field ID: f8bcf1db-83ad-47dd-a743-7f5c618d528e</para>
+				/// <para>Custom Data: type=TDS_Gen.Trainings.Pages.IAuthor</para>
+				/// </summary>
+				
+				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+				[SitecoreField(IArticle_DetailsConstants.Article_AuthorFieldName)]
+				public virtual TDS_Gen.Trainings.Pages.IAuthor Article_Author  {get; set;}
+				
+		
+				/// <summary>
 				/// The Article Image field.
 				/// <para></para>
 				/// <para>Field Type: Image</para>		
@@ -285,19 +298,6 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IArticle_DetailsConstants.Article_ImageFieldName)]
 				public virtual Image Article_Image  {get; set;}
-				
-		
-				/// <summary>
-				/// The Author field.
-				/// <para></para>
-				/// <para>Field Type: lookup</para>		
-				/// <para>Field ID: f8bcf1db-83ad-47dd-a743-7f5c618d528e</para>
-				/// <para>Custom Data: type=TDS_Gen.Trainings.Pages.IAuthor</para>
-				/// </summary>
-				
-				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
-				[SitecoreField(IArticle_DetailsConstants.AuthorFieldName)]
-				public virtual TDS_Gen.Trainings.Pages.IAuthor Author  {get; set;}
 				
 		
 				/// <summary>

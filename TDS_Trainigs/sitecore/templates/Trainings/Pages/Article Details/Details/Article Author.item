@@ -2,9 +2,9 @@
 version: 1
 id: {F8BCF1DB-83AD-47DD-A743-7F5C618D528E}
 database: master
-path: /sitecore/templates/Trainings/Pages/Article Details/Details/Author
+path: /sitecore/templates/Trainings/Pages/Article Details/Details/Article Author
 parent: {6FD9B4C1-EB94-41E1-BB81-E9FAB9D06B05}
-name: Author
+name: Article Author
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -55,7 +55,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: f69b1457-e29c-4f90-951c-374e11475b69
+revision: 9154599a-6bf7-49e7-b1b5-3393de72ceeb
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -70,14 +70,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f69b1457-e29c-4f90-951c-374e11475b69
+9154599a-6bf7-49e7-b1b5-3393de72ceeb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20170630T104642Z
+20170703T150733Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

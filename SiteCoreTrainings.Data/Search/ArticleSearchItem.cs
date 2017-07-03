@@ -5,7 +5,7 @@ namespace SiteCoreTrainings.Data.Search
 {
     public class ArticleSearchItem : BaseSearchResultItem
     {
-        [IndexField("author")]
-        public Guid Author { get; set; }
+        [IndexField("article_author")]
+        public Guid ArticleAuthor { get; set; }
     }
 }

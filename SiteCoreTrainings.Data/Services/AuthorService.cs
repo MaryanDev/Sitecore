@@ -52,7 +52,7 @@ namespace SiteCoreTrainings.Data.Services
                 author.Articles = new List<Article_Details>();
 
                 var query = context.GetQueryable<ArticleSearchItem>();
-                query = query.Where(a => a.Paths.Contains(articlesPath) && a.Author == author.Id && a.TemplateId == BlogConstants.ArticleDetailsTemplateId);
+                query = query.Where(a => a.Paths.Contains(articlesPath)  && a.TemplateId == BlogConstants.ArticleDetailsTemplateId);
 
                 foreach (var article in query)
                 {

@@ -14,7 +14,7 @@
                 Likes - <span id="@Model.Id" class="glyphicon glyphicon-thumbs-up like-sign">@Html.Glass().Editable(m => m.Likes)</span>
             </p>
 
-            <span>Date Created: @Html.Glass().Editable(m => m.Date); Author - <a href="@Model.Author.Url">@Html.Glass().Editable(a => a.Author.Full_Name)</a></span>
+            <span>Date Created: @Html.Glass().Editable(m => m.Date); Author - <a href="@Model.Article_Author.Url">@Html.Glass().Editable(a => a.Article_Author.Full_Name)</a></span>
         </div>
         @Html.Sitecore().Placeholder("CommentsForm")
         @Html.Partial("Comments/CommentsList", Model.Comments)
