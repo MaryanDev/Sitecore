@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Web.UI.HtmlControls;
 using Sitecore;
 using Sitecore.Web;
@@ -62,8 +58,6 @@ namespace SiteCoreTrainings.Infrastructure
             validatortext.InnerHtml = "";
 
             validatortext.RenderControl(output);
-
-            //output.Write($"<div id='validator_{ID}' style='color:grey'></div>");
         }
 
         protected override bool LoadPostData(string value)

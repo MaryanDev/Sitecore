@@ -1,16 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using Sitecore.Data.Converters;
-using Sitecore.Data.Validators.ItemValidators;
 using Sitecore.Shell.Applications.ContentEditor;
-using Sitecore.Web;
 using Sitecore.Web.UI.HtmlControls;
 using Sitecore.Web.UI.Sheer;
 using SiteCoreTrainings.Infrastructure.Models;

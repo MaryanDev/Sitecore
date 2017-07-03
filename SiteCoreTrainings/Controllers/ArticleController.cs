@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Security.Authentication;
 using System.Web.Mvc;
-using Sitecore.Data;
-using Sitecore.Security.Authentication;
-using Sitecore.SecurityModel;
-using SiteCoreTrainings.Data.Models;
 using SiteCoreTrainings.Data.Services;
 using SiteCoreTrainings.Models.ViewModels;
 using SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages;

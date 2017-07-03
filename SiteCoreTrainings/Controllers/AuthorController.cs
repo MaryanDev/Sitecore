@@ -1,14 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using Sitecore.Data;
-using SiteCoreTrainings.Data.Constants;
-using SiteCoreTrainings.Data.Models;
 using SiteCoreTrainings.Data.Services;
 using SiteCoreTrainings.Models.ViewModels;
-using SiteCoreTrainings.TDS_Entities.TDS_Gen;
 using SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages;
 using PaginationDetails = SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages.PaginationDetails;
 using Comment = SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages.Comment;
@@ -54,7 +48,7 @@ namespace SiteCoreTrainings.Controllers
         //[ValidateFormHandler]
         public ActionResult CommentsForm(CommentViewModel comment)
         {
-            IAuthorDetails page = SitecoreContext.GetCurrentItem<IAuthorDetails>();
+            Author page = SitecoreContext.GetCurrentItem<Author>();
             if (ModelState.IsValid)
             {
                 var commentToAdd = new Comment

@@ -441,6 +441,7 @@
     <SitecoreItem Include="sitecore\templates\Trainings\Pages\Home\Information\Address.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <CodeGenData>type=string</CodeGenData>
     </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Trainings\Pages\Home\Information\Html.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>

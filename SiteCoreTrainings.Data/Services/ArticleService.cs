@@ -1,18 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Glass.Mapper.Sc;
-using Sitecore.ContentSearch.Linq;
 using Sitecore.ContentSearch.SearchTypes;
 using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.SecurityModel;
-using Sitecore.Web.UI.HtmlControls;
 using SiteCoreTrainings.Data.Constants;
-using SiteCoreTrainings.Data.Models;
-using SiteCoreTrainings.Data.Search;
 using SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages;
 using Comment = SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages.Comment;
 

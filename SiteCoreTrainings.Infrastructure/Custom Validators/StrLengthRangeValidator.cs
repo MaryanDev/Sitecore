@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Runtime.Serialization;
 using Sitecore.Data.Validators;
 
 namespace SiteCoreTrainings.Infrastructure.Custom_Validators
@@ -28,7 +23,6 @@ namespace SiteCoreTrainings.Infrastructure.Custom_Validators
 
         protected override ValidatorResult Evaluate()
         {
-            //string min, max;
             Parameters.TryGetValue("minLength", out string min);
             Parameters.TryGetValue("maxLength", out string max);
 

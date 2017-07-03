@@ -1,6 +1,4 @@
 ﻿@using Glass.Mapper.Sc.Web.Mvc
-@using Sitecore.Mvc
-@*@model SiteCoreTrainings.Data.Models.IArticlesPage*@
 @model SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages.Articles
 
 <div class="container-fluid">
@@ -24,7 +22,6 @@
                         <td>@article.Date</td>
                         <td><a href="@article.Author.Url">@article.Author.Full_Name</a></td>
                         <td><span id="@article.Id" class="glyphicon glyphicon-thumbs-up like-sign" >@article.Likes</span></td>
-                        @*<input type="hidden" class="" value="@article.Id" />*@
                     </tr>
                 }
                 </tbody>

@@ -55,7 +55,7 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen
 	public partial interface IGlassBase{
 		
 		[SitecoreId]
-		Guid Id{ get; }
+		Guid Id{ get; set; }
 
 		[SitecoreInfo(SitecoreInfoType.Language)]
         Language Language{ get; }
@@ -656,10 +656,10 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 					/// <para></para>
 					/// <para>Field Type: Address Field</para>		
 					/// <para>Field ID: 14a57c2d-6f57-45a0-b1b2-3ca86cbbee36</para>
-					/// <para>Custom Data: </para>
+					/// <para>Custom Data: type=string</para>
 					/// </summary>
 					[SitecoreField(IHomeConstants.AddressFieldName)]
-					object /* UNKNOWN */ Address  {get; set;}
+					string Address  {get; set;}
 			
 			
 					/// <summary>
@@ -797,12 +797,12 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <para></para>
 				/// <para>Field Type: Address Field</para>		
 				/// <para>Field ID: 14a57c2d-6f57-45a0-b1b2-3ca86cbbee36</para>
-				/// <para>Custom Data: </para>
+				/// <para>Custom Data: type=string</para>
 				/// </summary>
 				
 				[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 				[SitecoreField(IHomeConstants.AddressFieldName)]
-				public virtual object /* UNKNOWN */ Address  {get; set;}
+				public virtual string Address  {get; set;}
 				
 		
 				/// <summary>

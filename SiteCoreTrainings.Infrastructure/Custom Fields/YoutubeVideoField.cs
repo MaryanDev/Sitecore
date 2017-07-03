@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web;
 using Sitecore.Web.UI.HtmlControls;
-using Sitecore;
 
 namespace SiteCoreTrainings.Infrastructure.Custom_Fields
 {

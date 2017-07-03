@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Glass.Mapper.Sc.Configuration.Attributes;
-using SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages;
 
 namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 {

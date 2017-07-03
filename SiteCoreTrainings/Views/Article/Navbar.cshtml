@@ -1,4 +1,4 @@
-﻿@model SiteCoreTrainings.Data.Models.IMenuItem
+﻿@model SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages.IMenuItem
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -19,7 +19,7 @@
                         Hello @Sitecore.Context.User.Name /
                         @foreach (var role in Sitecore.Context.User.Roles)
                         {
-                            @:(role.Name + ",")
+                            @:(@role.Name + ",")
                         }
                     </p>
                     <a class="navbar-brand" href="@Url.Action("Logout", "Account")">Log out</a>

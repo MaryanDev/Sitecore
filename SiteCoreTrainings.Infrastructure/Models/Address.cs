@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using Sitecore.Data.Validators;
 
 namespace SiteCoreTrainings.Infrastructure.Models
 {
@@ -39,11 +34,9 @@ namespace SiteCoreTrainings.Infrastructure.Models
             var request = (HttpWebRequest)WebRequest.Create("https://api.goshippo.com/addresses/");
 
             var postData = JsonConvert.SerializeObject(validationRequestBody);
-            //var data = Encoding.ASCII.GetBytes(postData);
 
             request.Method = "POST";
             request.ContentType = "application/json";
-            //request.ContentLength = data.Length;
             request.PreAuthenticate = true;
             request.Headers.Add("Authorization", "ShippoToken shippo_test_8ed060a354a98e3e58e12c5ac68393dc697ce56e");
 
@@ -66,8 +59,6 @@ namespace SiteCoreTrainings.Infrastructure.Models
             {
                 return null;
             }
-
-        //var isAddressValid = JObject.Parse(responseString)["validation_results"]["is_valid"].Value<bool>();
         }
 
         public Location GetAddressLocation()

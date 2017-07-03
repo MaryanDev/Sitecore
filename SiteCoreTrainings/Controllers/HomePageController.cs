@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using Sitecore.Data.Fields;
-using Sitecore.Mvc.Presentation;
-using SiteCoreTrainings.Data.Models;
-using SiteCoreTrainings.Infrastructure.Models;
+﻿using System.Web.Mvc;
+using SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages;
 
 namespace SiteCoreTrainings.Controllers
 {
@@ -22,7 +15,7 @@ namespace SiteCoreTrainings.Controllers
             //authors.Get
 
 
-            var context = SitecoreContext.GetCurrentItem<HomePage>();
+            var context = SitecoreContext.GetCurrentItem<Home>();
             return View(context);
         }
     }

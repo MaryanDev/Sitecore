@@ -1,17 +1,9 @@
-﻿@using Sitecore.Mvc
-@model SiteCoreTrainings.Models.ViewModels.CommentViewModel
+﻿@model SiteCoreTrainings.Models.ViewModels.CommentViewModel
 
-
-
-@*@using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post))*@
 @using (Html.BeginForm())
 {
     <div class="container">
         <div class="row">
-            @*<input type="hidden" name="fhController" value="Article" />
-            <input type="hidden" name="fhAction" value="CommentsForm" />
-            <input type="hidden" name="fhParam" value="comment"/>*@
-            @*@Html.Sitecore().FormHandler("Article", "CommentsForm")*@
             <div class="col-md-6 col-md-push-3">
                 <div class="text-danger">
                     @Html.ValidationSummary()

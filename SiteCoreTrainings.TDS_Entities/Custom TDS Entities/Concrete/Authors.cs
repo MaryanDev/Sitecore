@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages;
+﻿using System.Collections.Generic;
 
 namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 {

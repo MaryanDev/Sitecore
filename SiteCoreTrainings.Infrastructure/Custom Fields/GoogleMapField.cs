@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Web;
 using System.Web.UI;
 //using JWS.Fields.Library.Helpers;
 using Sitecore;
 using Sitecore.Configuration;
-using Sitecore.ContentSearch.Linq.Extensions;
 using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.Shell.Applications.ContentEditor;

@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Glass.Mapper.Sc;
 using Sitecore.ContentSearch.SearchTypes;
 using Sitecore.Data;
 using Sitecore.SecurityModel;
 using SiteCoreTrainings.Data.Constants;
-using SiteCoreTrainings.Data.Models;
 using SiteCoreTrainings.Data.Search;
-using Sitecore.Data.Items;
 using SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages;
 using Comment = SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages.Comment;
 
@@ -70,7 +64,7 @@ namespace SiteCoreTrainings.Data.Services
             }
         }
 
-        public void InsertComment(IAuthorDetails page, Comment comment)
+        public void InsertComment(Author page, Comment comment)
         {
             using (new SecurityDisabler())
             {

@@ -44,12 +44,14 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\Glass.Mapper.Sc.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
     <Reference Include="Sitecore.Kernel, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\Sitecore.Kernel.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -66,7 +68,9 @@
     <Compile Include="Custom TDS Entities\Concrete\Authors.cs" />
     <Compile Include="Custom TDS Entities\Concrete\Comment.cs" />
     <Compile Include="Custom TDS Entities\Concrete\GlassBase.cs" />
+    <Compile Include="Custom TDS Entities\Concrete\Home.cs" />
     <Compile Include="Custom TDS Entities\Concrete\PaginationDetails.cs" />
+    <Compile Include="Custom TDS Entities\Interfaces\IMenuItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TDS_Gen\TdsEntities.cs" />
   </ItemGroup>
@@ -77,8 +81,12 @@
     <None Include="App_Config\Include\z.Glass.Mapper.Sc.ViewRender.config.exclude" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Custom TDS Entities\Interfaces\" />
+    <ProjectReference Include="..\SiteCoreTrainings.Infrastructure\SiteCoreTrainings.Infrastructure.csproj">
+      <Project>{B9E4AB2E-977A-42CD-8D48-F6CB72DE8AC9}</Project>
+      <Name>SiteCoreTrainings.Infrastructure</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
