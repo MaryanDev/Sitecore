@@ -136,7 +136,7 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 					/// <summary>
 					/// The Article Author field.
 					/// <para></para>
-					/// <para>Field Type: lookup</para>		
+					/// <para>Field Type: Droptree</para>		
 					/// <para>Field ID: f8bcf1db-83ad-47dd-a743-7f5c618d528e</para>
 					/// <para>Custom Data: type=TDS_Gen.Trainings.Pages.IAuthor</para>
 					/// </summary>
@@ -277,7 +277,7 @@ namespace SiteCoreTrainings.TDS_Entities.TDS_Gen.Trainings.Pages
 				/// <summary>
 				/// The Article Author field.
 				/// <para></para>
-				/// <para>Field Type: lookup</para>		
+				/// <para>Field Type: Droptree</para>		
 				/// <para>Field ID: f8bcf1db-83ad-47dd-a743-7f5c618d528e</para>
 				/// <para>Custom Data: type=TDS_Gen.Trainings.Pages.IAuthor</para>
 				/// </summary>

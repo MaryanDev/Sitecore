@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Sitecore.ContentSearch;
+using Sitecore.ContentSearch.Linq;
 using Sitecore.ContentSearch.SearchTypes;
 using Sitecore.Data;
 using Sitecore.SecurityModel;
@@ -43,9 +45,7 @@ namespace SiteCoreTrainings.Data.Services
         {
             using (
                 var context =
-                    Sitecore.ContentSearch.ContentSearchManager.CreateSearchContext(
-                        new Sitecore.ContentSearch.SitecoreIndexableItem(Sitecore.Context.Item))
-            )
+                     ContentSearchManager.GetIndex("sitecore_web_index").CreateSearchContext())
             {
                 var author =
                     _sitecoreWebDbService.CreateType<Author>(Sitecore.Context.Database.GetItem(startPath));
@@ -53,12 +53,12 @@ namespace SiteCoreTrainings.Data.Services
 
                 var query = context.GetQueryable<ArticleSearchItem>();
                 query = query.Where(a => a.Paths.Contains(articlesPath)  && a.TemplateId == BlogConstants.ArticleDetailsTemplateId);
-
-                foreach (var article in query)
+                var resultSet = query.GetResults();
+                foreach (var article in resultSet)
                 {
-                    var concreteArticle = _sitecoreWebDbService.CreateType<Article_Details>(article.GetItem());
-
-                    author.Articles.Add(concreteArticle);
+                    var concreteArticle = _sitecoreWebDbService.CreateType<Article_Details>(article.Document.GetItem());
+                    if(concreteArticle.Article_Author.Id == author.Id)
+                        author.Articles.Add(concreteArticle);
                 }
                 return author;
             }
